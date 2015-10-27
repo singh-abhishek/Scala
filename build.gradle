@@ -1,0 +1,28 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+
+
+defaultTasks 'clean',  'build'
+
+project.ext{
+
+	
+
+
+	//test-libs
+	junit = 'junit:junit:4.11'	
+}
+
+repositories { mavenCentral() }
+
+
+
+dependencies {
+
+	compile ()
+			
+	
+
+	testCompile (project.ext.junit)
+}
